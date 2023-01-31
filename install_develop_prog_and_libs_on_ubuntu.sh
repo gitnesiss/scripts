@@ -1,5 +1,5 @@
 # Copyright 17.01.2023  s21genesiss@gmail.com
-# Version 0.3
+# Version 1.0
 # Скрипт для установки программ для разработки.
 
 #!/bin/bash
