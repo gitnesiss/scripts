@@ -34,7 +34,7 @@ GREYBACK="\e[47m"
 
 USER=$(whoami)
 
-echo -e "${GREEN}Hello \e[1;${GREEN}$USER.${ENDCOLOR}"
+echo -e "Hello ${GREEN}$USER.${ENDCOLOR}"
 
 echo -e "${BLUE}Обновление системы.${ENDCOLOR}"
 sudo apt update & upgrade -y

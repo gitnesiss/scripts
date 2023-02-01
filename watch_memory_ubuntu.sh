@@ -1,6 +1,6 @@
 # Copyright 31.01.2023  s21genesiss@gmail.com
 # Version 1.0
-# Скрипт для проверки памяти в ОС Ubuntu.
+# Скрипт для просмотра памяти в ОС Ubuntu.
 
 #!/bin/bash
 echo -e "        \033[1;37mИнформация о системе.\033[0m"
