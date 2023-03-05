@@ -36,6 +36,8 @@ USER=$(whoami)
 
 echo -e "Hello ${GREEN}$USER.${ENDCOLOR}"
 
+echo -e "${BLUE}Добавление шрифтов (часто используемых в windows).${ENDCOLOR}"
+sudo apt install ubuntu-restricted-extras -y
 echo -e "${BLUE}Обновление системы.${ENDCOLOR}"
 sudo apt update & upgrade -y
 echo -e "${BLUE}Установка gcc make perl.${ENDCOLOR}"
