@@ -47,6 +47,8 @@ sudo apt install build-essential -y
 echo -e "${BLUE}Установка cmake.${ENDCOLOR}"
 sudo apt install cmake -y
 sudo apt install cmake-qt-gui -y
+echo -e "${BLUE}Установка библиотеки gtest.${ENDCOLOR}"
+sudo apt-get install libgtest-dev
 echo -e "${BLUE}Установка valgrind.${ENDCOLOR}"
 sudo apt install valgrind -y
 echo -e "${BLUE}Установка OpenGL.${ENDCOLOR}"
