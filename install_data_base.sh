@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Установка GUI для управления ролями пользователей.
+# sudo apt-get install gnome-system-tools
+
+# Установка vim
+# sudo apt install vim
+
 # Создадим конфигурацию репозитория файлов:
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 
