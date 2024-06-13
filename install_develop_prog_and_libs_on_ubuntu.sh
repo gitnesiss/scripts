@@ -1,8 +1,8 @@
-# Copyright 17.01.2023  s21genesiss@gmail.com
-# Version 1.0
-# Скрипт для установки программ для разработки.
-
 #!/bin/bash
+
+# Copyright 13.06.2023  s21genesiss@gmail.com
+# Version 1.1
+# Скрипт для установки программ для разработки.
 
 # Цвет текста
 # 0 - Нормальный
@@ -66,9 +66,11 @@ echo -e "${BLUE}Установка xdg-utils для установки прог�
 sudo apt install xdg-utils
 echo -e "${BLUE}Установка инструмент для форматирования кода С/С++ clang-format-11.${ENDCOLOR}"
 sudo apt-get install clang-format-11 -y
-echo -e "${BLUE}Установка Qt6.02.${ENDCOLOR}"
+echo -e "${BLUE}Установка Qt5.15.${ENDCOLOR}"
 sudo apt update -y
 sudo apt install qtcreator -y
+echo -e "${BLUE}Установка пакета для работы с Qt quick в Qt5.${ENDCOLOR}"
+sudo apt install qtdeclarative5-dev # qt6-declarative-dev
 echo -e "${BLUE}Установка примеров программ для Qt.${ENDCOLOR}"
 sudo apt install qtbase5-examples qtdeclarative5-examples qtbase5-doc-html -y
 echo -e "${BLUE}Установка инструментов разработки для Qt.${ENDCOLOR}"
