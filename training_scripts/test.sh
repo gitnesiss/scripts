@@ -4,15 +4,4 @@
 # Version 1.0
 # Скрипт для тестирования работы кода
 
-if [[ -n $1 ]]
-then
-    echo "$1222"
-    echo "111"
-fi
-
-# -z   строка пустая, т.е. имеет нулевую длину
-# -n   строка не пустая
-
-
-
-
+sudo apt install qtdeclarative5-dev # qt6-declarative-dev
