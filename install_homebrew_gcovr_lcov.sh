@@ -1,10 +1,11 @@
 #!/bin/bash
-# Copyright 07.09.2022  s21genesiss@gmail.com
+# Copyright 08.09.2024  s21genesiss@gmail.com
 # Version 2.1
-# Скрипт для установки менеджера управления пакетами Homebrew на ОС X или Linux/Debian и пакетов gcovr и lcov.
+# Скрипт для установки менеджера управления пакетами Homebrew на ОС X или Linux/Debian и пакетов gcovr, lcov и makeinfo.
 # gcovr служит для создания отчёта о покрытии кода.
 # lcov служит для генерации html страницы, на которой будет представлена информация о
 #           покрытии кода в более удобочитаемой форме.
+# makeinfo служит для создания документации в формате .texi
 
 USERNAME=$(whoami)
 SYS_NAME=$(uname)
@@ -87,11 +88,14 @@ else
     exit 1 # выходим с ошибкой (1 - код ошибки), скрипт завершается
 fi
 echo
-echo "Установка gcovr"
-brew install gcovr
+echo "Установка makeinfo"
+brew install texinfo
 echo
 echo "Установка lcov"
 brew install lcov
+echo
+echo "Установка gcovr"
+brew install gcovr
 echo
 echo "Установка Homebrew, gcovr и lcov завершена."
 echo
